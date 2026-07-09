@@ -19,5 +19,119 @@ h1{
     font-size: 18px;
     font-weight: 500;
     color:#5b5757 ;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+}
+.services{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(380px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+.service-card{
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    min-height: 280px;
+    align-items: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: .3s;
+}
+.service-card:hover{
+    transform: translateY(-8px);
+}
+.content{
+    padding: 28px;
+}
+
+.content h3{
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 18px 0;
+}
+.content p{
+    font-size: 17px;
+    line-height: 1.8;
+    color:#666;
+    margin-bottom:25px;
+}
+
+.icon{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:38px;
+}
+.utensils{
+    background: #fff5e6;
+}
+.motorcycle{
+    background: rgb(249, 182, 205);
+}
+.leaf{
+    background:rgb(173, 234, 174) ;
+}
+.gift{
+    background:rgb(222, 199, 244) ;
+}
+.headset{
+    background:rgb(182, 228, 246) ;
+}
+.chair{
+    background:rgb(211, 193, 158) ;
+}
+.image{
+    height: 100%;
+}
+
+.image{
+    height:100%;
+}
+
+.image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.btn{
+    padding:12px 28px;
+    border-radius:12px;
+    font-size:16px;
+    background: #d89000; 
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background: #b97800;
+}
+@media(max-width:992px){
+
+    .services{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .services{
+        grid-template-columns: 1fr;
+    }
+
+    .service-card{
+        grid-template-columns: 1fr;
+    }
+
+    .image{
+        order: -1;
+        height: 250px;
+    }
+
 }
