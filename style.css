@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #cbc4b9;
+}
+.header{
+    text-align: center;
+    padding: 50px;
+}
+h1{
+    padding-bottom: 20px;
+    font-size: 46px;
+    font-weight: bold;
+}
+.header p{
+    font-size: 18px;
+    font-weight: 500;
+    color:#5b5757 ;
+    padding-bottom: 20px;
+}
